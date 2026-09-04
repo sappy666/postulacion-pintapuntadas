@@ -1,0 +1,304 @@
+import { DesignItem, GalleryItem } from '../types';
+
+import exhibicionRegistro from '../../imagenes/ex artes plasticas.jpg';
+import exhibicionFichas from '../../imagenes/ex artes plasticas (1).jpg';
+import exhibicionPublico from '../../imagenes/ex artes plasticas (2).jpg';
+import exhibicionDetalle from '../../imagenes/ex artes plasticas 4.jpg';
+
+export const DESIGNS_DATA: DesignItem[] = [
+  {
+    id: 'torres-del-paine',
+    title: 'Torres del Paine en Otoño',
+    subtitle: 'Obra Bordada Lista para Colgar',
+    category: 'patrimoniales',
+    categoryLabel: 'Bordados Patrimoniales',
+    location: 'Región de Magallanes (Bordado por Pamela Rojas Botto)',
+    image: 'https://mymodernmet.com/wp/wp-content/uploads/2021/03/embroidered-landscapes-magic-from-wonderland-3.jpg',
+    price: 58000,
+    difficulty: 'Avanzado',
+    dimensions: 'Bastidor Madera 22 cm',
+    timeHours: 40,
+    description: 'Obra textil terminada a mano por Pamela Rojas Botto que representa las icónicas torres de granito del Parque Nacional Torres del Paine. Bordada con hilos mouliné matizados sobre lino natural. Entrega montada en bastidor de haya con acabado protector.',
+    stitchesUsed: ['Punto Tallo', 'Nudo Francés', 'Punto Cadeneta', 'Puntada Plana Matizada', 'Punto Satén'],
+    threadPalette: [
+      { code: 'DMC 3825', name: 'Terracota Otoñal', hex: '#C86D51' },
+      { code: 'DMC 3347', name: 'Verde Nothofagus', hex: '#4A6B4E' },
+      { code: 'DMC 3750', name: 'Azul Glaciar', hex: '#2A4D69' },
+      { code: 'DMC 840', name: 'Granito Patagónico', hex: '#8C7B6B' },
+      { code: 'DMC 743', name: 'Amarillo Canelo', hex: '#E2AD38' },
+    ],
+    includedInKit: [
+      'Obra 100% bordada a mano por Pamela Rojas Botto',
+      'Bastidor de madera de haya pulida de 22 cm listo para colgar',
+      'Protector textil UV contra la humedad y polvo',
+      'Certificado de autenticidad firmado por Pamela Rojas Botto',
+      'Empaque de regalo en caja kraft de autor con cinta de yute'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'corona-botanica-limache',
+    title: 'Corona Botánica de la Costa',
+    subtitle: 'Obra Bordada Lista para Decorar',
+    category: 'flora',
+    categoryLabel: 'Flora & Jardín',
+    location: 'Limache, Valparaíso',
+    image: 'https://images.unsplash.com/photo-1568288796918-03e7d93306bd?auto=format&fit=crop&w=1200&q=80',
+    price: 49000,
+    difficulty: 'Intermedio',
+    dimensions: 'Bastidor Madera 20 cm',
+    timeHours: 40,
+    description: 'Delicada corona floral y follaje nativo bordado a mano por Pamela Rojas Botto con flores blancas en altorrelieve y nudos de hilo sobre lino tostado. Pieza terminada ideal para dormitorios o salas de estar.',
+    stitchesUsed: ['Nudo Francés de relieve', 'Punto de Relleno Matizado', 'Punto Tallo', 'Punto Margarita'],
+    threadPalette: [
+      { code: 'DMC B5200', name: 'Blanco Nieve', hex: '#FAFAFA' },
+      { code: 'DMC 3012', name: 'Verde Oliva Silvestre', hex: '#8C885A' },
+      { code: 'DMC 840', name: 'Lino Tostado', hex: '#8C7B6B' },
+      { code: 'DMC 745', name: 'Crema Botánico', hex: '#FDF1CD' },
+    ],
+    includedInKit: [
+      'Bordado a mano terminado por Pamela Rojas Botto sobre lino',
+      'Bastidor de madera pulida de 20 cm listo para exhibición',
+      'Fijación posterior en fieltro protector',
+      'Certificado de pieza única de autor con firma de la artista'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'atacama-desierto-florido',
+    title: 'Desierto Florido de Atacama',
+    subtitle: 'Obra Bordada en Relieve',
+    category: 'patrimoniales',
+    categoryLabel: 'Bordados Patrimoniales',
+    location: 'Región de Atacama (Bordado en Limache)',
+    image: 'https://images.unsplash.com/photo-1711030613054-7ff20acda07d?auto=format&fit=crop&w=1200&q=80',
+    price: 52000,
+    difficulty: 'Principiante',
+    dimensions: 'Bastidor Madera 20 cm',
+    timeHours: 40,
+    description: 'La milagrosa transformación del desierto de Atacama recreada en hilos por Pamela Rojas Botto. Una tapicería de añañucas y flores silvestres sobre tonos cálidos y cobrizos, terminada a mano en nuestro taller de Limache.',
+    stitchesUsed: ['Nudo Francés denso', 'Punto Moscú', 'Punto Margarita', 'Punto Tallo'],
+    threadPalette: [
+      { code: 'DMC 3820', name: 'Ocre Desértico', hex: '#C9A15E' },
+      { code: 'DMC 3350', name: 'Rosa Añañuca', hex: '#D6597A' },
+      { code: 'DMC 3041', name: 'Malva Andino', hex: '#B79FCB' },
+    ],
+    includedInKit: [
+      'Cuadro textil bordado a mano por Pamela Rojas Botto',
+      'Bastidor de madera de haya de 20 cm',
+      'Tratamiento protector de hilos',
+      'Certificado de autenticidad y envoltorio ecológico de regalo'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'valle-de-colchagua',
+    title: 'Valle de Colchagua y Viñedos',
+    subtitle: 'Obra Bordada en Cuadro',
+    category: 'patrimoniales',
+    categoryLabel: 'Bordados Patrimoniales',
+    location: 'Región del O’Higgins (Bordado en Limache)',
+    image: 'https://plus.unsplash.com/premium_photo-1677355760442-696f5842a34f?auto=format&fit=crop&w=1200&q=80',
+    price: 55000,
+    difficulty: 'Intermedio',
+    dimensions: 'Bastidor Madera 22 cm',
+    timeHours: 40,
+    description: 'Geometría viva de hileras de viñedos y alamedas doradas del valle central, bordadas a mano por Pamela Rojas Botto. Obra textil completa con texturas en relieve y degradados en hilo de algodón fino.',
+    stitchesUsed: ['Punto Escabina', 'Relieve en Cordoncillo', 'Punto de Fuego', 'Punto Tallo'],
+    threadPalette: [
+      { code: 'DMC 815', name: 'Tinto Carmenere', hex: '#631828' },
+      { code: 'DMC 733', name: 'Verde Parra', hex: '#8F9142' },
+      { code: 'DMC 435', name: 'Tierra de Valle', hex: '#85512B' },
+      { code: 'DMC 782', name: 'Ocre Otoño', hex: '#BA7A29' },
+    ],
+    includedInKit: [
+      'Bordado artesanal terminado a mano por Pamela Rojas Botto',
+      'Bastidor circular de haya de 22 cm listo para colgar',
+      'Sello de autenticidad Pintapuntadas Limache'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'conguillio-araucarias',
+    title: 'Conguillío y Volcán Llaima',
+    subtitle: 'Obra Textil de Gran Formato',
+    category: 'patrimoniales',
+    categoryLabel: 'Bordados Patrimoniales',
+    location: 'Región de La Araucanía (Bordado en Limache)',
+    image: 'https://images.unsplash.com/photo-1771479452306-6dad4a9fbec0?auto=format&fit=crop&w=1200&q=80',
+    price: 68000,
+    difficulty: 'Avanzado',
+    dimensions: 'Bastidor Madera 25 cm',
+    timeHours: 40,
+    description: 'Majestuosidad de la Araucaria araucana bordada punto a punto sobre un fondo volcánico. Más de 40 horas de labor artesanal realizada por Pamela Rojas Botto en Limache para un cuadro de presencia única.',
+    stitchesUsed: ['Punto Rama', 'Espinazo de Pescado', 'Punto de Relleno Matizado', 'Nudo Francés'],
+    threadPalette: [
+      { code: 'DMC 3041', name: 'Violeta Volcán', hex: '#8677A6' },
+      { code: 'DMC 921', name: 'Naranja Otoñal', hex: '#C1602E' },
+      { code: 'DMC 934', name: 'Verde Araucaria', hex: '#3C4A28' },
+    ],
+    includedInKit: [
+      'Obra artística bordada a mano por Pamela Rojas Botto de 25 cm',
+      'Bastidor de madera noble seleccionado listo para colgar',
+      'Cinta de suspensión en lino para colgar',
+      'Certificado de pieza de colección firmado por Pamela Rojas Botto'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'copihue-nativo',
+    title: 'Copihue en Selva Valdiviana',
+    subtitle: 'Estudio Botánico Bordado',
+    category: 'flora',
+    categoryLabel: 'Flora Nativa',
+    location: 'Sur de Chile (Bordado por Pamela Rojas Botto)',
+    image: 'https://images.unsplash.com/photo-1771585654998-23fe43d8b4c6?auto=format&fit=crop&w=1200&q=80',
+    price: 45000,
+    difficulty: 'Principiante',
+    dimensions: 'Bastidor Madera 18 cm',
+    timeHours: 40,
+    description: 'Estudio botánico bordado a mano por Pamela Rojas Botto del Copihue (Lapageria rosea), flor nacional chilena. Campanillas rojas de hilo matizado cayendo entre enredaderas sobre lino beige.',
+    stitchesUsed: ['Punto Satén Matizado', 'Punto Tallo', 'Punto Moscú'],
+    threadPalette: [
+      { code: 'DMC 321', name: 'Rojo Copihue', hex: '#BA1C2B' },
+      { code: 'DMC 814', name: 'Rojo Carmesí Profundo', hex: '#630C16' },
+      { code: 'DMC 3346', name: 'Verde Hoja Silvestre', hex: '#44663B' },
+    ],
+    includedInKit: [
+      'Bordado a mano por Pamela Rojas Botto en bastidor de 18 cm',
+      'Protección textil para conservación de color',
+      'Caja de presentación de autor Pintapuntadas'
+    ],
+    featured: true,
+    isKitAvailable: true,
+  },
+  {
+    id: 'picaflor-de-juan-fernandez',
+    title: 'Picaflor de Juan Fernández',
+    subtitle: 'Obra de Fauna Endémica',
+    category: 'fauna',
+    categoryLabel: 'Fauna Chilena',
+    location: 'Archipiélago Juan Fernández (Bordado en Limache)',
+    image: 'https://images.unsplash.com/photo-1711030613054-7ff20acda07d?auto=format&fit=crop&w=1200&q=80',
+    price: 52000,
+    difficulty: 'Intermedio',
+    dimensions: 'Bastidor Madera 20 cm',
+    timeHours: 40,
+    description: 'Retrato textil del picaflor canela (Sephanoides fernandensis) bordado por Pamela Rojas Botto. Gradaciones minúsculas a aguja fina que simulan el plumaje brillante de la especie endémica.',
+    stitchesUsed: ['Punto Pluma', 'Punto de Aguja Corta y Larga', 'Nudo Francés'],
+    threadPalette: [
+      { code: 'DMC 946', name: 'Naranja Iridiscente', hex: '#DC4A13' },
+      { code: 'DMC 434', name: 'Pluma Canela', hex: '#874D27' },
+      { code: 'DMC 938', name: 'Sombra de Bosque', hex: '#3B2314' },
+    ],
+    includedInKit: [
+      'Obra bordada terminada por Pamela Rojas Botto en bastidor de 20 cm',
+      'Fondo posterior sellado en fieltro protector',
+      'Etiqueta de autoría artesanal firmada'
+    ],
+    featured: false,
+    isKitAvailable: true,
+  },
+  {
+    id: 'quirilluca-acantilados',
+    title: 'Acantilados de Quirilluca',
+    subtitle: 'Bordado Costero de Valparaíso',
+    category: 'patrimoniales',
+    categoryLabel: 'Bordados Patrimoniales',
+    location: 'Puchuncaví / Valparaíso (Bordado en Limache)',
+    image: 'https://plus.unsplash.com/premium_photo-1677355760442-696f5842a34f?auto=format&fit=crop&w=1200&q=80',
+    price: 48000,
+    difficulty: 'Principiante',
+    dimensions: 'Bastidor Madera 18 cm',
+    timeHours: 40,
+    description: 'Inspirado en el acantilado costero y el mar del litoral central. Colores de vegetación de costa y olas bordadas a mano por Pamela Rojas Botto en Limache.',
+    stitchesUsed: ['Punto Lanzado', 'Punto Tallo', 'Punto Margarita'],
+    threadPalette: [
+      { code: 'DMC 3346', name: 'Verde Acantilado', hex: '#4F7A4A' },
+      { code: 'DMC 725', name: 'Amarillo Retama', hex: '#D4A72C' },
+      { code: 'DMC 3768', name: 'Cielo Costero', hex: '#AEC4D1' },
+    ],
+    includedInKit: [
+      'Cuadro textil terminado de 18 cm',
+      'Envoltorio ecológico artesanal'
+    ],
+    featured: false,
+    isKitAvailable: true,
+  }
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'gal-1',
+    title: 'Obra Bordada Botánica en Lino',
+    category: 'Obras',
+    image: 'https://images.unsplash.com/photo-1568288796918-03e7d93306bd?auto=format&fit=crop&w=1000&q=80',
+    aspectRatio: 'portrait',
+    description: 'Obra terminada por Pamela Rojas Botto lista para colgar. Bordado minucioso en lino natural.',
+    location: 'Taller Pintapuntadas, Limache',
+    technique: 'Bordado de altorrelieve y matices'
+  },
+  {
+    id: 'gal-2',
+    title: 'Paisaje Bordado en Hilo',
+    category: 'Obras',
+    image: 'https://mymodernmet.com/wp/wp-content/uploads/2021/03/embroidered-landscapes-magic-from-wonderland-3.jpg',
+    aspectRatio: 'square',
+    description: 'Montañas y prados reasociados en hilos de algodón sobre bastidor circular.',
+    technique: 'Bordado de paisaje en altorrelieve'
+  },
+  {
+    id: 'gal-3',
+    title: 'Detalle de Bordado Textil en Bastidor',
+    category: 'Obras',
+    image: 'https://images.unsplash.com/photo-1771585654998-23fe43d8b4c6?auto=format&fit=crop&w=1000&q=80',
+    aspectRatio: 'portrait',
+    description: 'Cuadro bordado a mano con motivos botánicos nativos. Listo para regalar o vestir paredes.',
+    technique: 'Punto satén, nudo francés y lino'
+  },
+  {
+    id: 'gal-4',
+    title: 'Registro Fotográfico de la Muestra',
+    category: 'Talleres',
+    image: exhibicionRegistro,
+    aspectRatio: 'portrait',
+    description: 'Una asistente fotografía de cerca el bastidor de Quirilluca para el registro digital de la muestra.',
+    location: 'Exhibición de Resultados, Biblioteca Municipal de Limache',
+    technique: 'Registro fotográfico de obra'
+  },
+  {
+    id: 'gal-5',
+    title: 'Fichas Técnicas y Piezas en Exhibición',
+    category: 'Talleres',
+    image: exhibicionFichas,
+    aspectRatio: 'portrait',
+    description: 'Bastidores junto a sus fichas técnicas, dispuestos sobre la mesa de exhibición frente al ventanal.',
+    location: 'Exhibición de Resultados, Biblioteca Municipal de Limache',
+    technique: 'Montaje de exhibición'
+  },
+  {
+    id: 'gal-6',
+    title: 'Público Visitando la Muestra',
+    category: 'Talleres',
+    image: exhibicionPublico,
+    aspectRatio: 'portrait',
+    description: 'Una visitante se detiene a observar los bordados exhibidos entre los estantes de la biblioteca.',
+    location: 'Exhibición de Resultados, Biblioteca Municipal de Limache',
+    technique: 'Jornada de exhibición pública'
+  },
+  {
+    id: 'gal-7',
+    title: 'Detalle de Obra en Exhibición',
+    category: 'Talleres',
+    image: exhibicionDetalle,
+    aspectRatio: 'portrait',
+    description: 'Un bastidor con un atardecer entre palmeras captura la atención del público asistente a la muestra.',
+    location: 'Exhibición de Resultados, Biblioteca Municipal de Limache',
+    technique: 'Jornada de exhibición pública'
+  }
+];

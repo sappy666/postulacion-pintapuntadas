@@ -1,0 +1,6 @@
+{
+  "name": "Pintapuntadas",
+  "description": "Sitio web de Pintapuntadas: Bordados patrimoniales, paisajes, flora y fauna en hilos. Catálogo de diseños, galería de trabajos y pedidos personalizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
